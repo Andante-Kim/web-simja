@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="container my-3">
+    <br>
+    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+        <button type="button" class="btn btn-lg" style="background-color: #ffe1ed;">전부 선택하기</button>
+        <h6 class="text-center">처음부터 모든 설정 랜덤 돌리기</h6>
+        <br>
+        <p class="text-center">일부만 선택하기</p>
+        <p class="text-center">&darr;</p>
+    </div>
+    
+   
+
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header text-center">
+                    Basic
+                </div>
+                <img src="{% static 'img/basic_flower.png' %}" class="card-img-top" alt="basic_flower" style="width: 150px; height: auto;">
+                <div class="card-body">
+
+                    <label for="name">이름:</label>
+                    <input type="checkbox" id="name" value="name"><br>
+                    <label for="age">나이:</label>
+                    <input type="checkbox" id="age" value="age"><br>
+                    <label for="sex">성별:</label>
+                    <input type="radio" name="sex" id="sex_random" value="sex_random">
+                    <label for = "sex_random">성별 랜덤</label><br>
+                    <input type="radio" name="sex" id="female" value="female">
+                    <label for = "female">여자</label>
+                    <input type="radio" name="sex" id="male" value="male">
+                    <label for = "male">남자</label><br>
+                    <label for="species">종족:</label>
+                    <input type="checkbox" id="species" value="species"><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header text-center">
+                    Apperence
+                </div>
+                <img src="{% static 'img/apperence_flower.png' %}" class="card-img-top" alt="apperence_flower" style="width: 150px; height: auto;">
+                <div class="card-body">
+                    <label for="apperence">외모:</label>
+                    <input type="checkbox" id="name" value="name"><br>
+                    
+                    <input type="radio" name="apperence" id="skin" value="skin">
+                    <label for = "skin">피부색</label><br>
+
+                    <input type="radio" name="apperence" id="hair" value="hair">
+                    <label for = "hair">머리색</label><br>
+
+                    <input type="radio" name="apperence" id="eye" value="eye">
+                    <label for = "eye">눈동자색</label><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header text-center">
+                    Career
+                </div>
+                <img src="{% static 'img/career_flower.png' %}" class="card-img-top" alt="career_flower" style="width: 150px; height: auto;">
+                <div class="card-body">
+                    <label for="career">직업:</label>
+                    <input type="checkbox" id="career" value="career"><br>
+                    
+                    <label for="ambition">야망:</label>
+                    <input type="checkbox" id="ambition" value="ambition"><br>
+    
+                    <label for="money">경제수준:</label>
+                    <input type="checkbox" id="money" value="money"><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header text-center">
+                    Personality
+                </div>
+                <img src="{% static 'img/personality_flower.png' %}" class="card-img-top" alt="personality_flower" style="width: 150px; height: auto;">
+                <div class="card-body">
+                    <label for="personality">특성:</label>
+                    <input type="checkbox" id="personality" value="personality"><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header text-center">
+                    More
+                </div>
+                <img src="{% static 'img/more_flower.png' %}" class="card-img-top" alt="more_flower" style="width: 150px; height: auto;">
+                <div class="card-body">
+                    <label for="like">호불호:</label>
+                    <input type="checkbox" id="like" value="like"><br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+        <br>
+        <input type="checkbox" id="setting" value="setting">
+        <label for="'setting">보유팩 설정</label>
+        <button type="button" class="btn btn-outline-secondary">선택하기</button>
+        <br>
+        
+        <button type="button" class="btn btn-lg" style="background-color: #ffe1ed;">생성</button>
+        <br>
+    </div>
+
+    <!-- 랜덤 결과 start-->
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+            <div class="card h-100" style="background-color: #edfcfe; border-color: #72cee2;">
+                <div class="card-body">
+                    <p>아리엘라 왓슨</p>
+                    <p>여자</p>
+                    <p>인간</p>
+                </div>
+                <div class="card-footer">
+                    <h5 class="card-title text-end">Basic</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="background-color: #fffce6; border-color: #ffdf02;">
+                <div class="card-body">
+                    <p>피부</p>
+                    <p>머리</p>
+                    <p>눈</p>
+                </div>
+                <div class="card-footer">
+                    <h5 class="card-title text-end">Apperence</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="background-color: #fffafb; border-color: #ffd2de;">
+                <div class="card-body">
+                    <p>우주비행사</p>
+                    <p>연애중독자</p>
+                    <p>중산층</p>
+                </div>
+                <div class="card-footer">
+                    <h5 class="card-title text-end">Career</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="background-color: #fdfaff; border-color: #dcc6ed;">
+                <div class="card-body">
+                    <div class="card-body">
+                        <p>독서광</p>
+                        <p>미식가</p>
+                        <p>게으름</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h5 class="card-title text-end">Personality</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="background-color: #f7fee9; border-color: #aee21d;">
+                <div class="card-body">
+                    <p>like</p>
+                    <p>dislike</p>
+                </div>
+                <div class="card-footer">
+                    <h5 class="card-title text-end">More</h5>
+                </div>
+              
+            </div>
+        </div>
+
+    </div>
+    <!-- 랜덤 결과 end-->
+    <br>
+
+    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+        <button type="button" class="btn btn-lg" style="background-color: #deff7f;">세부설정 만들기</button>
+    </div>
+    
+</div>
+
+
+
+{% endblock %}
