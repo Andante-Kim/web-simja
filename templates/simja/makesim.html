@@ -6,10 +6,11 @@
 <div class="container my-3">
     <br>
     <div class="d-grid gap-2 mx-auto justify-content-md-center">
+        <img src="{% static 'img/rabbit.png' %}" class="rounded mx-auto d-block" alt="rabbit" style="width: 150px; height: auto;">
         <button type="button" class="btn btn-lg" style="background-color: #ffe1ed;">전부 선택하기</button>
-        <h6 class="text-center">처음부터 모든 설정 랜덤 돌리기</h6>
+        <h5 class="text-center"><span style="color: #ff9cb1;">처음</span>부터 <mark>모든 설정</mark> 랜덤 돌리기</h5>
         <br>
-        <p class="text-center">일부만 선택하기</p>
+        <h5 class="text-center" style="color: #aee146;">일부만 선택하기</h45>
         <p class="text-center">&darr;</p>
     </div>
     
@@ -17,12 +18,16 @@
 
     <div class="row row-cols-1 row-cols-md-5 g-4">
         <div class="col">
-            <div class="card h-100">
-                <div class="card-header text-center">
+            <div class="card h-100" style="border-color: #72cee2;">
+                <div class="card-header text-center" style="background-color: #72cee2; border-color: #72cee2;">
                     Basic
                 </div>
-                <img src="{% static 'img/basic_flower.png' %}" class="card-img-top" alt="basic_flower" style="width: 150px; height: auto;">
+                <img src="{% static 'img/basic_flower.png' %}" class="card-img-top rounded mx-auto d-block" alt="basic_flower" style="width: 150px; height: auto;">
                 <div class="card-body">
+                    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+                        <button type="button" class="btn btn-sm" style="background-color: #edfcfe; border-color: #72cee2;">전체선택</button>
+                    </div>
+                    
 
                     <label for="name">이름:</label>
                     <input type="checkbox" id="name" value="name"><br>
@@ -42,12 +47,17 @@
         </div>
 
         <div class="col">
-            <div class="card h-100">
-                <div class="card-header text-center">
+            <div class="card h-100" style="border-color: #ffdf02;">
+                <div class="card-header text-center" style="background-color: #ffdf02; border-color: #ffdf02;">
                     Apperence
                 </div>
-                <img src="{% static 'img/apperence_flower.png' %}" class="card-img-top" alt="apperence_flower" style="width: 150px; height: auto;">
+                <img src="{% static 'img/apperence_flower.png' %}" class="card-img-top rounded mx-auto d-block" alt="apperence_flower" style="width: 150px; height: auto;">
                 <div class="card-body">
+                    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+                        <button type="button" class="btn btn-sm" style="background-color: #fffce6; border-color: #ffdf02;">전체선택</button>
+                    </div>
+                    
+
                     <label for="apperence">외모:</label>
                     <input type="checkbox" id="name" value="name"><br>
                     
@@ -64,12 +74,17 @@
         </div>
 
         <div class="col">
-            <div class="card h-100">
-                <div class="card-header text-center">
+            <div class="card h-100" style="border-color: #ffd2de;">
+                <div class="card-header text-center" style="background-color: #ffd2de; border-color: #ffd2de;">
                     Career
                 </div>
-                <img src="{% static 'img/career_flower.png' %}" class="card-img-top" alt="career_flower" style="width: 150px; height: auto;">
+                <img src="{% static 'img/career_flower.png' %}" class="card-img-top rounded mx-auto d-block" alt="career_flower" style="width: 150px; height: auto;">
                 <div class="card-body">
+                    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+                        <button type="button" class="btn btn-sm" style="background-color: #fffafb; border-color: #ffd2de;">전체선택</button>
+                    </div>
+                    
+
                     <label for="career">직업:</label>
                     <input type="checkbox" id="career" value="career"><br>
                     
@@ -83,12 +98,16 @@
         </div>
 
         <div class="col">
-            <div class="card h-100">
-                <div class="card-header text-center">
+            <div class="card h-100" style="border-color:#dcc6ed;;">
+                <div class="card-header text-center" style="background-color: #dcc6ed; border-color: #dcc6ed;">
                     Personality
                 </div>
-                <img src="{% static 'img/personality_flower.png' %}" class="card-img-top" alt="personality_flower" style="width: 150px; height: auto;">
+                <img src="{% static 'img/personality_flower.png' %}" class="card-img-top rounded mx-auto d-block" alt="personality_flower" style="width: 150px; height: auto;">
                 <div class="card-body">
+                    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+                        <button type="button" class="btn btn-sm" style="background-color: #fdfaff; border-color: #dcc6ed;">전체선택</button>
+                    </div>
+
                     <label for="personality">특성:</label>
                     <input type="checkbox" id="personality" value="personality"><br>
                 </div>
@@ -96,12 +115,16 @@
         </div>
 
         <div class="col">
-            <div class="card h-100">
-                <div class="card-header text-center">
+            <div class="card h-100" style="border-color: #aee21d;">
+                <div class="card-header text-center" style="background-color: #aee21d; border-color: #aee21d;">
                     More
                 </div>
-                <img src="{% static 'img/more_flower.png' %}" class="card-img-top" alt="more_flower" style="width: 150px; height: auto;">
+                <img src="{% static 'img/more_flower.png' %}" class="card-img-top rounded mx-auto d-block" alt="more_flower" style="width: 150px; height: auto;">
                 <div class="card-body">
+                    <div class="d-grid gap-2 mx-auto justify-content-md-center">
+                        <button type="button" class="btn btn-sm" style="background-color: #f7fee9; border-color: #aee21d;">전체선택</button>
+                    </div>
+
                     <label for="like">호불호:</label>
                     <input type="checkbox" id="like" value="like"><br>
                 </div>

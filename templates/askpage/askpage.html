@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container my-3">
+    <img src="{% static 'img/rabbit.png' %}" alt="rabbit" style="width: 150px; height: auto;">
+    <h2 class="text-center">개발자에게 문의하세요!</h2>
+
+    <img src="{% static 'img/apperence_flower.png' %}" alt="apperence_flower" style="width: 150px; height: auto;">
+    <br>
+    <input type="radio" name="ask" id="more_function" value="more_function">
+    <label for = "more_function" style="color: #ff9cb1;">이 기능이 더 있었으면...</label><br>
+    <input type="radio" name="ask" id="find_error" value="find_error">
+    <label for = "find_error" style="color: #aee146;">오류가 있어요!</label><br>
+    <input type="radio" name="ask" id="etc" value="etc">
+    <label for = "etc" style="color: #ff9cb1;">기타</label><br>
+
+    <div style="display: flex;">
+        <!--<label for="user-comment" style="margin-right: 0.5em;">의견작성란</label>-->
+        <textarea
+            id="user-comment"
+            rows="6"
+            cols="22"
+            
+            placeholder="작성하기..."></textarea>
+    </div>
+    
+</div>
+
+{% endblock %}
